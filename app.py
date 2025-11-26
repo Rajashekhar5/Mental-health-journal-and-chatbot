@@ -77,6 +77,8 @@ def get_zenbot_response(user_input):
     
     if "hello" in input_text or "hi" in input_text:
         return "Hello! I'm ZenBot. I'm here to listen. What's on your mind today?"
+    elif "happy" in input_text:
+        return "Oo!! thats amazing news!! , stay happy forever because your simle only matters."
     elif "stress" in input_text or "anxiety" in input_text:
         return "It sounds like you're feeling overwhelmed. Let's try a quick mindfulness exercise. Focus on the feeling of your feet on the floor.remember you don't have any thoughts in your mind ,feel there is you and only you in your surrounding and in your soul.Always be calm with your mind ,this is my suggestion about your feeling. "
     elif "sad" in input_text or "down" in input_text:
