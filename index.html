@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulMe - Journal & Chat</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>MindfulMe: Your Mental Wellness Companion</h1>
+    </header>
+
+    <div class="tab-container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'Journal')">Journal 📝</button>
+            <button class="tab-button" onclick="openTab(event, 'Chatbot')">Chatbot 🤖</button>
+        </div>
+
+        <div id="Journal" class="tab-content active-content">
+            <h2>Daily Reflection</h2>
+            <textarea id="journal-entry" placeholder="How are you feeling today? What's on your mind?"></textarea>
+            <button onclick="saveJournalEntry()">Save Entry</button>
+
+            <h3>Past Entries:</h3>
+            <ul id="past-entries">
+                </ul>
+        </div>
+
+        <div id="Chatbot" class="tab-content" style="display:none;">
+            <h2>Talk to "ZenBot"</h2>
+            <div class="chat-window" id="chat-window">
+                <div class="message bot-message">Hello! I'm ZenBot. I'm here to listen. How can I help you today?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
